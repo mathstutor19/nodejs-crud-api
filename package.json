@@ -1,8 +1,11 @@
 {
-  "name": "nodejs-crud-api",
+  "name": "nodejs-rss-crud-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "description": "RS School CRUD API task",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "start:dev": "nodemon",
     "start:prod": "webpack --mode=production --node-env=production && node build/bundle.js",
@@ -11,9 +14,16 @@
     "lint:fix": "eslint . --fix",
     "test": "jest"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maks-rafalko/nodejs-rss-crud-api.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maks-rafalko/nodejs-rss-crud-api/issues"
+  },
+  "homepage": "https://github.com/maks-rafalko/nodejs-rss-crud-api#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "uuid": "^9.0.0"
